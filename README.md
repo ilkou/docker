@@ -1,12 +1,12 @@
-## create machine
+## create virtual machine
 
 https://docs.docker.com/machine/reference/create/
 
-## docker-machine ip
+## ip of virtual machine
 
 https://docs.docker.com/machine/reference/ip/
 
-## env variables
+## the variables needed by the virtual machine
 
 "docker-machine env Char" command output:
 ```
@@ -27,7 +27,22 @@ Char   *        virtualbox   Running   tcp://192.168.99.100:2376           v19.0
 ```
 Now the ACTIVE column of Char has * instead of -
 
-## restart policies
+## docker pull
 
+https://docs.docker.com/engine/reference/commandline/pull/
+
+## docker run
+
+https://docs.docker.com/engine/reference/commandline/run/
+https://docs.docker.com/config/containers/container-networking/
 https://docs.docker.com/engine/reference/run/#restart-policies---restart
-
+##### Port Mapping
+When you run a container with the -p argument, for example:
+```
+$ docker run -p 80:80 -d nginx
+```
+Docker Desktop for Mac makes whatever is running on port 80 in the container (in this case, nginx) available on port 80 of localhost. In this example, the host and container ports are the same. What if you need to specify a different host port? If, for example, you already have something running on port 80 of your host machine, you can connect the container to a different port:
+```
+$ docker run -p 8000:80 -d nginx
+```
+Now, connections to localhost:8000 are sent to port 80 in the container. The syntax for -p is HOST_PORT:CLIENT_PORT
