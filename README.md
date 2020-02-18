@@ -61,4 +61,12 @@ https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpi
 
 https://docs.docker.com/engine/reference/commandline/volume_create/
 
+## MySQL
+
+#### volume
+link to volume https://hub.docker.com/_/mysql 
+==> /var/lib/mysql
+#### Default Authentication Plugin Considerations
+https://mysqlserverteam.com/upgrading-to-mysql-8-0-default-authentication-plugin-considerations/
+
 
