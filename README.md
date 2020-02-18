@@ -8,7 +8,7 @@ https://docs.docker.com/machine/reference/ip/
 
 ## env variables
 
-###Explanation
+#### Explanation
 
 docker-machine env Char command output:
 ```
@@ -20,7 +20,7 @@ export DOCKER_MACHINE_NAME="Char"
 # eval $(docker-machine env Char)
 ```
 
-### How to check result?
+#### How to check result?
 
 docker-machine ls command output:
 ```
