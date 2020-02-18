@@ -63,10 +63,11 @@ https://docs.docker.com/engine/reference/commandline/volume_create/
 
 ## MySQL
 
-#### volume
+#### Volume
 link to volume https://hub.docker.com/_/mysql 
 ==> /var/lib/mysql
 #### Default Authentication Plugin Considerations
 https://mysqlserverteam.com/upgrading-to-mysql-8-0-default-authentication-plugin-considerations/
-
-
+#### Check Mount
+https://stackoverflow.com/questions/31235211/go-templates-how-do-i-access-array-item-arr2-in-templates
+docker inspect spawning-pool -f '{{ (index .Mounts 0).Destination }}'
