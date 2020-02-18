@@ -37,6 +37,7 @@ https://docs.docker.com/engine/reference/commandline/run/
 https://docs.docker.com/config/containers/container-networking/
 https://docs.docker.com/engine/reference/run/#restart-policies---restart
 ##### Port Mapping
+https://docs.docker.com/docker-for-mac/networking/
 When you run a container with the -p argument, for example:
 ```
 $ docker run -p 80:80 -d nginx
@@ -46,3 +47,18 @@ Docker Desktop for Mac makes whatever is running on port 80 in the container (in
 $ docker run -p 8000:80 -d nginx
 ```
 Now, connections to localhost:8000 are sent to port 80 in the container. The syntax for -p is HOST_PORT:CLIENT_PORT
+
+## container's internal IP address
+
+https://linuxconfig.org/how-to-retrieve-docker-container-s-internal-ip-address
+https://www.thegeekdiary.com/how-to-get-information-about-a-container-in-docker
+
+## alpine's shell
+
+https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpine-container/43564198#43564198
+
+## docker volume
+
+https://docs.docker.com/engine/reference/commandline/volume_create/
+
+
