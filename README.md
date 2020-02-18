@@ -8,8 +8,6 @@ https://docs.docker.com/machine/reference/ip/
 
 ## env variables
 
-#### Explanation
-
 docker-machine env Char command output:
 ```
 export DOCKER_TLS_VERIFY="1"
@@ -20,7 +18,7 @@ export DOCKER_MACHINE_NAME="Char"
 # eval $(docker-machine env Char)
 ```
 
-#### How to check result?
+#### check result
 
 docker-machine ls command output:
 ```
