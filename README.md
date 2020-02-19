@@ -82,3 +82,12 @@ $ docker run --name myadmin -d --link mysql:db -p 8080:80 phpmyadmin
 ## Docker logs
 https://takacsmark.com/docker-logs/
 https://success.docker.com/article/view-realtime-container-logging
+
+## Docker Python Flask
+
+python:<version>-slim => https://hub.docker.com/_/python
+--host=0.0.0.0 => https://flask.palletsprojects.com/en/1.1.x/quickstart/
+
+## Docker Swarm
+
+https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
