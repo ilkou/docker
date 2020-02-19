@@ -71,3 +71,14 @@ https://mysqlserverteam.com/upgrading-to-mysql-8-0-default-authentication-plugin
 #### Check Mount
 https://stackoverflow.com/questions/31235211/go-templates-how-do-i-access-array-item-arr2-in-templates
 docker inspect spawning-pool -f '{{ (index .Mounts 0).Destination }}'
+
+## PhpMyAdmin
+https://omarghader.github.io/docker-tutorial-phpmyadmin-and-mysql-server/
+##### Running PhpMyAdmin container
+Phpmyadmin must point to MySQL Server. So that we must link both containers by adding the option : –link name-of-container:name-of-imag.
+```
+$ docker run --name myadmin -d --link mysql:db -p 8080:80 phpmyadmin
+```
+## Docker logs
+https://takacsmark.com/docker-logs/
+https://success.docker.com/article/view-realtime-container-logging
