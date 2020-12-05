@@ -91,3 +91,11 @@ python:<version>-slim => https://hub.docker.com/_/python
 ## Docker Swarm
 
 https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
+
+## Gitlab
+
+* https://hub.docker.com/r/gitlab/gitlab-ce/~/dockerfile/
+* https://help.ubuntu.com/community/AptGet/Howto
+* https://gitlab.com/gitlab-org/gitlab-ce
+
+`docker run -it --rm -p 8080:80 -p 8022:22 -p 8443:443 --privileged ex03`
