@@ -1,6 +1,6 @@
 # JS - Environment
 
-set up your environment for JS programming language.
+A developing environment to code in nodejs, using npm.
 
 `node` `npm` `git` `nvm`
 
